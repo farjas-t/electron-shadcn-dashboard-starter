@@ -104,7 +104,6 @@
         "cmdk": "^1.0.0",
         "date-fns": "^4.1.0",
         "electron-router-dom": "^2.0.0",
-        "electron-squirrel-startup": "^1.0.1",
         "embla-carousel-react": "^8.3.0",
         "i18next": "^23.15.1",
         "input-otp": "^1.2.4",

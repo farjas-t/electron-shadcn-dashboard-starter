@@ -2,11 +2,10 @@ import { app, BrowserWindow } from "electron";
 import registerListeners from "./helpers/ipc/listeners-register";
 import path from "path";
 
-const inDevelopment = process.env.NODE_ENV === "development";
+declare const MAIN_WINDOW_VITE_DEV_SERVER_URL: string;
+declare const MAIN_WINDOW_VITE_NAME: string;
 
-if (require("electron-squirrel-startup")) {
-    app.quit();
-}
+const inDevelopment = process.env.NODE_ENV === "development";
 
 function createWindow() {
     const preload = path.join(__dirname, "preload.js");
