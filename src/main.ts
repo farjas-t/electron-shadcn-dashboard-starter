@@ -1,10 +1,11 @@
 import { app, BrowserWindow } from "electron";
 import registerListeners from "./helpers/ipc/listeners-register";
+import started from 'electron-squirrel-startup';
 import path from "path";
 
 const inDevelopment = process.env.NODE_ENV === "development";
 
-if (require("electron-squirrel-startup")) {
+if (started) {
     app.quit();
 }
 
